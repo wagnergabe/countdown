@@ -8,6 +8,12 @@ body {
     overflow: hidden;
 }
 
+h4 {
+    font-size: 20px;
+    margin: 5px;
+    overflow: hidden;
+}
+
 .counter {
     position: fixed;
     top: 50%;
@@ -100,6 +106,21 @@ body {
 
     100% {
         transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+
+@keyframes goOut {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+
+    60% {
+        transform: translate(-50%, -50%) rotate(20deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(-120deg);
     }
 }
 
